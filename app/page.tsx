@@ -2,6 +2,7 @@
 export async function generateMetadata() {
   console.log("Start fetch");
   const res = await fetch("http://worldtimeapi.org/api/timezone/Europe/Amsterdam", {
+    cache: "force-cache",
     next: {
       tags: ['my-cachetag']
     }
