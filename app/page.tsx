@@ -15,6 +15,6 @@ export async function generateMetadata() {
   }
 }
 
-export default function Home() {
-  return null;
+export default async function Home() {
+  return <span>TEST</span>
 }
