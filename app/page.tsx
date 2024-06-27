@@ -6,6 +6,8 @@ export default async function Home() {
     }
   });
 
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
   const data = await res.json();
 
   return <span>{data.unixtime.toString()}</span>
